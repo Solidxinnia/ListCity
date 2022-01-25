@@ -56,7 +56,9 @@ public class ShowActivityTest {
         // Asserts that the current activity is the Show Activity. Otherwise, show “Wrong Activity”
         solo.assertCurrentActivity("Wrong Activity", ShowActivity.class);
 
-        solo.clickOnButton("MAIN"); //Click Button
+        solo.clickOnButton("GOTO MAINACTIVITY"); //Click Button
+
+        solo.sleep(2000); // 20 seconds
 
         solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
 
